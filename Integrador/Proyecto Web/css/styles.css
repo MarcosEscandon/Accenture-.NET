@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@300;700&display=swap');
+
+body{font-family: "Poppins", sans-serif;}
+nav a{ text-decoration: none;}
+header{ text-align: center;}
+header h1{ font-family: "Poppins", sans-serif; text-transform: lowercase;}
+
+@font-face{ src: url(../fuentes/BodoniFLF-BoldItalic.ttf);
+    font-style: italic;
+    font-weight: bold;
+    font-family: miFuente;
+}
+
+body{ font-family: "Poppins", sans-serif; font-size: 90%;}
+nav a{ text-decoration: none;}
+header{ text-align: center;}
+header h1{ font-family: "Poppins", sans-serif; font-weight: 300; font-size: 2em;}
+header h1 span{ font-family: miFuente; font-style: italic; font-weight: bold;}
+h2{ font-family: miFuente; font-size: 2em;}
+h4{ font-size: 1.4em;}
+p{ font-size: 1.2em;}
+h3{ font-family: miFuente; font-size: 3em;}
