@@ -1,0 +1,17 @@
+C:\Users\User\source\repos\Marcos_Escandon_Casting\Marcos_Escandon_Casting\bin\Debug\net6.0-windows\Marcos_Escandon_Casting.exe
+C:\Users\User\source\repos\Marcos_Escandon_Casting\Marcos_Escandon_Casting\bin\Debug\net6.0-windows\Marcos_Escandon_Casting.deps.json
+C:\Users\User\source\repos\Marcos_Escandon_Casting\Marcos_Escandon_Casting\bin\Debug\net6.0-windows\Marcos_Escandon_Casting.runtimeconfig.json
+C:\Users\User\source\repos\Marcos_Escandon_Casting\Marcos_Escandon_Casting\bin\Debug\net6.0-windows\Marcos_Escandon_Casting.dll
+C:\Users\User\source\repos\Marcos_Escandon_Casting\Marcos_Escandon_Casting\bin\Debug\net6.0-windows\Marcos_Escandon_Casting.pdb
+C:\Users\User\source\repos\Marcos_Escandon_Casting\Marcos_Escandon_Casting\obj\Debug\net6.0-windows\Marcos_Escandon_Casting.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\Marcos_Escandon_Casting\Marcos_Escandon_Casting\obj\Debug\net6.0-windows\Marcos_Escandon_Casting.Form1.resources
+C:\Users\User\source\repos\Marcos_Escandon_Casting\Marcos_Escandon_Casting\obj\Debug\net6.0-windows\Marcos_Escandon_Casting.csproj.GenerateResource.cache
+C:\Users\User\source\repos\Marcos_Escandon_Casting\Marcos_Escandon_Casting\obj\Debug\net6.0-windows\Marcos_Escandon_Casting.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\Marcos_Escandon_Casting\Marcos_Escandon_Casting\obj\Debug\net6.0-windows\Marcos_Escandon_Casting.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\Marcos_Escandon_Casting\Marcos_Escandon_Casting\obj\Debug\net6.0-windows\Marcos_Escandon_Casting.AssemblyInfo.cs
+C:\Users\User\source\repos\Marcos_Escandon_Casting\Marcos_Escandon_Casting\obj\Debug\net6.0-windows\Marcos_Escandon_Casting.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Marcos_Escandon_Casting\Marcos_Escandon_Casting\obj\Debug\net6.0-windows\Marcos_Escandon_Casting.dll
+C:\Users\User\source\repos\Marcos_Escandon_Casting\Marcos_Escandon_Casting\obj\Debug\net6.0-windows\refint\Marcos_Escandon_Casting.dll
+C:\Users\User\source\repos\Marcos_Escandon_Casting\Marcos_Escandon_Casting\obj\Debug\net6.0-windows\Marcos_Escandon_Casting.pdb
+C:\Users\User\source\repos\Marcos_Escandon_Casting\Marcos_Escandon_Casting\obj\Debug\net6.0-windows\Marcos_Escandon_Casting.genruntimeconfig.cache
+C:\Users\User\source\repos\Marcos_Escandon_Casting\Marcos_Escandon_Casting\obj\Debug\net6.0-windows\ref\Marcos_Escandon_Casting.dll

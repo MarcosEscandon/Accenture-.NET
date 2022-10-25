@@ -1,0 +1,17 @@
+C:\Users\User\source\repos\MarcosEscandon_WindowsFinal\MarcosEscandon_WindowsFinal\bin\Debug\net6.0-windows\MarcosEscandon_WindowsFinal.exe
+C:\Users\User\source\repos\MarcosEscandon_WindowsFinal\MarcosEscandon_WindowsFinal\bin\Debug\net6.0-windows\MarcosEscandon_WindowsFinal.deps.json
+C:\Users\User\source\repos\MarcosEscandon_WindowsFinal\MarcosEscandon_WindowsFinal\bin\Debug\net6.0-windows\MarcosEscandon_WindowsFinal.runtimeconfig.json
+C:\Users\User\source\repos\MarcosEscandon_WindowsFinal\MarcosEscandon_WindowsFinal\bin\Debug\net6.0-windows\MarcosEscandon_WindowsFinal.dll
+C:\Users\User\source\repos\MarcosEscandon_WindowsFinal\MarcosEscandon_WindowsFinal\bin\Debug\net6.0-windows\MarcosEscandon_WindowsFinal.pdb
+C:\Users\User\source\repos\MarcosEscandon_WindowsFinal\MarcosEscandon_WindowsFinal\obj\Debug\net6.0-windows\MarcosEscandon_WindowsFinal.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\MarcosEscandon_WindowsFinal\MarcosEscandon_WindowsFinal\obj\Debug\net6.0-windows\MarcosEscandon_WindowsFinal.Form1.resources
+C:\Users\User\source\repos\MarcosEscandon_WindowsFinal\MarcosEscandon_WindowsFinal\obj\Debug\net6.0-windows\MarcosEscandon_WindowsFinal.csproj.GenerateResource.cache
+C:\Users\User\source\repos\MarcosEscandon_WindowsFinal\MarcosEscandon_WindowsFinal\obj\Debug\net6.0-windows\MarcosEscandon_WindowsFinal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\MarcosEscandon_WindowsFinal\MarcosEscandon_WindowsFinal\obj\Debug\net6.0-windows\MarcosEscandon_WindowsFinal.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\MarcosEscandon_WindowsFinal\MarcosEscandon_WindowsFinal\obj\Debug\net6.0-windows\MarcosEscandon_WindowsFinal.AssemblyInfo.cs
+C:\Users\User\source\repos\MarcosEscandon_WindowsFinal\MarcosEscandon_WindowsFinal\obj\Debug\net6.0-windows\MarcosEscandon_WindowsFinal.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\MarcosEscandon_WindowsFinal\MarcosEscandon_WindowsFinal\obj\Debug\net6.0-windows\MarcosEscandon_WindowsFinal.dll
+C:\Users\User\source\repos\MarcosEscandon_WindowsFinal\MarcosEscandon_WindowsFinal\obj\Debug\net6.0-windows\refint\MarcosEscandon_WindowsFinal.dll
+C:\Users\User\source\repos\MarcosEscandon_WindowsFinal\MarcosEscandon_WindowsFinal\obj\Debug\net6.0-windows\MarcosEscandon_WindowsFinal.pdb
+C:\Users\User\source\repos\MarcosEscandon_WindowsFinal\MarcosEscandon_WindowsFinal\obj\Debug\net6.0-windows\MarcosEscandon_WindowsFinal.genruntimeconfig.cache
+C:\Users\User\source\repos\MarcosEscandon_WindowsFinal\MarcosEscandon_WindowsFinal\obj\Debug\net6.0-windows\ref\MarcosEscandon_WindowsFinal.dll
