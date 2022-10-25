@@ -23,7 +23,11 @@
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
-            "problemMatcher": "$msCompile"
+            "problemMatcher": {
+                "base" : "$gcc",
+                "fileLocation" : "absolute"
+            }
+            
         },
         {
             "label": "watch",
