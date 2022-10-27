@@ -1,0 +1,40 @@
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
+body{
+    background-color: darkblue;
+}
+
+header {
+    background-color: grey;
+    height: 150px;
+}
+nav {
+    background-color: pink;
+    height: 50px;
+}
+main{
+    background-color:greenyellow;
+    height: 450px;
+    position: relative;
+    
+}
+article{
+    background-color: blue;
+    height: 25%;
+    width: 90%;
+   margin-left: 50px;
+   
+}
+
+aside{
+    background-color: darkcyan;
+    height: 450px;
+
+}
+footer {
+    background-color: orange;
+    height: 50px;
+}

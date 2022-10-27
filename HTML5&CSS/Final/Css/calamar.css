@@ -1,0 +1,17 @@
+*{
+    background-color: rgb(5, 70, 160);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header{
+    background-color: rgb(13, 75, 155);
+    color: rgb(235, 88, 88);
+    font-size: large;
+    text-align: center;
+    padding: 10px;
+    position:sticky center;
+}
+header img{
+    height:250px;
+    padding: 10px;
+}
+
