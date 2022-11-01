@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/general.css" />
+    <link rel="stylesheet" href="/css/formulario.css" />
+    <title>Formularios en Mi Propia Web</title>
+  </head>
+  <body>
+    <div id="cabecera">
+      <img src="/image/logo.gif" alt="Logo de la página" width="15%" />
+      <h1>Mi Propia Web</h1>
+      <h2>Aprendiendo a construir un sitio Web</h2>
+    </div>
+    <div id="navegacion">
+      <div class="menu"><a href="index.html">Inicio</a></div>
+      <div class="menu"><a href="listas.html">Listas</a></div>
+      <div class="menu"><a href="tablas.html">Tablas</a></div>
+      <div class="menu"><a href="formulario.html">Formulario</a></div>
+      <div class="vacio"></div>
+    </div>
+    <div id="principal">
+      <h2>Formulario de prueba</h2>
+      <p>
+        La forma principal de interactuar con el usuario, y que pueda mandarnos
+        algunos datos es mediante formularios. Un formulario es una serie de
+        preguntas que se hacen al usuario para que este responda.
+      </p>
+      <p>
+        El siguiente formulario es un formulario de prueba. Suponemos que hemos
+        creado un foro o un chat, y pedimos al usuario que rellene el formulario
+        para hacerse usuario del mismo.
+      </p>
+      <h3>Formulario de ingreso</h3>
+      <form
+        action="mailto:aprendeweb@aprende-web.net"
+        enctype="text/plain"
+        method="post"
+        name="foro"
+        id="foro"
+      >
+        <div class="seccion">
+          <h4>Datos personales</h4>
+          <p>Nombre: <input type="text" name="nombre" /></p>
+          <p>Contraseña: <input type="password" name="Contraseña" /></p>
+          <h4>Mi perfil</h4>
+          <p>
+            Escribe cómo quieres presentarte ante los demás usuarios del foro
+          </p>
+          <p><textarea name="descripcion">Mi perfil: </textarea></p>
+          <h4>Sexo</h4>
+          <p><input type="radio" name="sexo" value="hombre" /> Hombre</p>
+          <p><input type="radio" name="sexo" value="mujer" /> Mujer</p>
+          <p>
+            <input type="radio" name="sexo" value="indefinido" /> Sin definir
+          </p>
+        </div>
+        <div class="seccion">
+          <h4>Aficiones</h4>
+          <p><input type="checkbox" name="Deportes" value="Si" /> Deportes</p>
+          <p><input type="checkbox" name="Cine" value="Si" /> Cine</p>
+          <p><input type="checkbox" name="Música" value="Si" /> Música</p>
+          <p>
+            <input type="checkbox" name="Noticias" value="Si" /> Noticias y
+            Actualidad
+          </p>
+          <h4>Edad</h4>
+          <p>Elige cual es tu franja de edad.</p>
+          <p>
+            <select name="edad">
+              <option value="menos de 20">Menos de 21 años</option>
+              <option value="de 21 a 30">Entre 21 y 30 años</option>
+              <option value="de 31 a 40">Entre 31 y 40 años</option>
+              <option value="de 41 a 60">Entre 41 y 60 años</option>
+              <option value="más de 61">Más de 61 años</option>
+            </select>
+          </p>
+          <h4>Borrar o enviar</h4>
+          <p>
+            <input type="reset" value="Borrar Todo" /> : Borra todo y reinicia
+            el formulario.
+          </p>
+          <p>
+            <input type="submit" value="Enviar" /> : Abre el programa de correo
+            para enviar el formulario.
+          </p>
+        </div>
+        <div class="vacio"></div>
+      </form>
+    </div>
+    <div id="pie">
+      <div class="col_pie">
+        <h4>Sobre este sitio</h4>
+        <p>Propiedad de : Nombre Apellido</p>
+        <p>Webmaster: Nombre Apellido</p>
+      </div>
+      <div class="col_pie">
+        <h4>Contactos</h4>
+        <p>Email : miemail@servidor.com</p>
+        <p>Teléfono: 900-00-00-00</p>
+      </div>
+      <div class="col_pie">
+        <h4>En las redes</h4>
+        <p>Facebook : (dirección de Facebook)</p>
+        <p>Twitter: (dirección de Twitter)</p>
+      </div>
+      <div class="vacio"></div>
+    </div>
+  </body>
+</html>

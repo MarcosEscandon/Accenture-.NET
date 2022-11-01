@@ -1,0 +1,46 @@
+/*estilo específico para formulario.html*/
+/*titulo principal, título de formulario y párrafos */
+#principal h2 {
+    margin: 0.5em;
+    color: navy;
+    font-size: 1.5em;
+  }
+  #principal p {
+    margin: 0.5em 5em;
+    text-align: justify;
+    font-size: 0.9em;
+  }
+  #principal h3 {
+    color: #4b0082;
+    margin: 0.5em 2em;
+  }
+  /*Formulario: Aspectos generales:*/
+  #principal h4 {
+    text-align: left;
+    color: purple;
+    font-size: 1.1em;
+    margin: 0.5em 4em;
+  }
+  .seccion {
+    width: 40%;
+    margin: 4%;
+    border: 1px solid black;
+    float: left;
+  }
+  /*Formulario: elementos específicos*/
+  input {
+    text-align: left;
+  }
+  textarea {
+    text-align: left;
+    font-size: 0.8em;
+    width: 90%;
+    height: 5em;
+  }
+  select {
+    width: 12em;
+    text-align: left;
+  }
+  option {
+    text-align: left;
+  }

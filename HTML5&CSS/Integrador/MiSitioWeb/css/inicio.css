@@ -1,0 +1,119 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+  }
+  h1 {
+    text-align: center;
+    color: blue;
+    font-size: 40px;
+    font-family: arial;
+  }
+  h2 {
+    text-align: center;
+    color: maroon;
+    font-size: 30px;
+    font-family: tahoma, verdana, arial;
+  }
+  h3 {
+    text-align: left;
+    color: olive;
+    font-size: 25px;
+    font-family: stencil, impact, "times new roman";
+    margin: 20px 100px;
+  }
+  p {
+    text-align: justify;
+    margin: 1em 10em;
+    font-family: verdana, nimrod, tahoma;
+    font-size: 14px;
+    color: navy;
+  }
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: tahoma, arial;
+  }
+  a img {
+    height: 150px;
+  }
+  a:link {
+    color: navy;
+  }
+  a:visited {
+    color: blue;
+  }
+  a:hover {
+    color: green;
+    font-style: italic;
+  }
+  a:active {
+    color: red;
+  }
+  a img:hover {
+    height: 145px;
+  }
+  #cabecera img {
+    float: left;
+    width: 100px;
+    margin-left: 50px;
+  }
+  .mienlace {
+    width: 30%;
+    margin: 20px 1%;
+    float: left;
+    background-color: aqua;
+  }
+  .mienlace p {
+    margin: 10px 60px;
+  }
+  #cabecera {
+    background-color: silver;
+    padding: 20px 10px;
+  }
+  #enlaces {
+    background-color: yellow;
+    width: 90%;
+    border: 5px double red;
+  }
+  .vacio {
+    clear: both;
+  }
+  #navegacion {
+    background-color: purple;
+    padding: 5px 0px;
+  }
+  .menu {
+    width: 25%;
+    float: left;
+  }
+  .menu a {
+    margin: 0px 50px;
+    color: white;
+  }
+  .menu a:hover {
+    color: yellow;
+    font-style: normal;
+  }
+  
+  #pie {
+    background-color: #ffe4c4;
+    margin-top: 20px;
+    padding: 10px 0px;
+  }
+  .col_pie {
+    float: left;
+    width: 33%;
+  }
+  .col_pie h4 {
+    font-size: 1.2em;
+    color: maroon;
+    padding-left: 3em;
+    font-family: arial;
+  }
+  .col_pie p {
+    margin: 5px;
+    padding-left: 3em;
+    font-size: 0.8em;
+    color: black;
+  }

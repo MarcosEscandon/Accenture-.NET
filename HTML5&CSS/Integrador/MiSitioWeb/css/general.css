@@ -1,0 +1,74 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    font-family: verdana, tahoma, arial;
+  }
+  a {
+    text-decoration: none;
+  }
+  /*estilo para la cabecera*/
+  #cabecera {
+    background-color: silver;
+    padding: 20px 10px;
+  }
+  #cabecera img {
+    float: left;
+    width: 100px;
+    margin-left: 50px;
+  }
+  #cabecera h1 {
+    color: blue;
+    font-size: 40px;
+    font-family: arial;
+  }
+  #cabecera h2 {
+    color: maroon;
+    font-size: 30px;
+    font-family: tahoma, verdana, arial;
+  }
+  /*estilo para barra de navegación*/
+  #navegacion {
+    background-color: purple;
+    padding: 5px 0px;
+  }
+  #navegacion .menu {
+    width: 25%;
+    float: left;
+  }
+  #navegacion .menu a {
+    margin: 0px 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  #navegacion .menu a:hover {
+    color: yellow;
+  }
+  .vacio {
+    clear: both;
+  }
+  /*estilo para pie de página*/
+  #pie {
+    background-color: #ffe4c4;
+    margin-top: 20px;
+    padding: 10px 0px;
+  }
+  #pie .col_pie {
+    float: left;
+    width: 33%;
+  }
+  #pie .col_pie h4 {
+    text-align: left;
+    font-size: 1.2em;
+    color: maroon;
+    padding-left: 3em;
+    font-family: arial;
+  }
+  #pie .col_pie p {
+    text-align: left;
+    margin: 5px;
+    padding-left: 3em;
+    font-size: 0.8em;
+    color: black;
+  }

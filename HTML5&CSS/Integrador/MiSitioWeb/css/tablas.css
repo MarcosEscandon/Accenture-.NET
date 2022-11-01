@@ -1,0 +1,41 @@
+/*Por si hubiera alguna duda ponemos aquí el código completo del archivo tablas.css*/
+/*estilo específico para para página tablas.html*/
+/*titulo principal y párrafos */
+#principal h2 {
+  margin: 0.5em;
+  color: navy;
+  font-size: 1.5em;
+}
+#principal p {
+  margin: 0.5em 5em;
+  text-align: justify;
+  font-size: 0.9em;
+}
+#principal sup {
+  font-size: 0.5em;
+}
+/*título de la lista*/
+#principal h3 {
+  color: navy;
+  margin: 0.5em;
+  font-size: 1.3em;
+}
+/*tabla: aspectos generales*/
+table {
+  border: 4px double blue;
+  width: 70%;
+  border-collapse: collapse;
+}
+table th,
+table td {
+  border: 1px solid blue;
+  padding: 0.5em;
+}
+/*estilo de celdas*/
+table th {
+  color: purple;
+}
+table td {
+  text-align: left;
+  padding-left: 2em;
+}
