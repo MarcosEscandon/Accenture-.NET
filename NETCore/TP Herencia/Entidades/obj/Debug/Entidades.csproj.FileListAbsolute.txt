@@ -1,0 +1,6 @@
+C:\Users\joekw\Desktop\Bootcamp Accenture\Clase 9 (o 10)\TP Herencia\Entidades\bin\Debug\Entidades.dll
+C:\Users\joekw\Desktop\Bootcamp Accenture\Clase 9 (o 10)\TP Herencia\Entidades\bin\Debug\Entidades.pdb
+C:\Users\joekw\Desktop\Bootcamp Accenture\Clase 9 (o 10)\TP Herencia\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\joekw\Desktop\Bootcamp Accenture\Clase 9 (o 10)\TP Herencia\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\joekw\Desktop\Bootcamp Accenture\Clase 9 (o 10)\TP Herencia\Entidades\obj\Debug\Entidades.dll
+C:\Users\joekw\Desktop\Bootcamp Accenture\Clase 9 (o 10)\TP Herencia\Entidades\obj\Debug\Entidades.pdb

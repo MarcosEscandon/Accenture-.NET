@@ -1,0 +1,14 @@
+C:\Users\joekw\Desktop\Bootcamp Accenture\Clase 9 (o 10)\TP Herencia\WindowsPresentacion\bin\Debug\WindowsPresentacion.exe.config
+C:\Users\joekw\Desktop\Bootcamp Accenture\Clase 9 (o 10)\TP Herencia\WindowsPresentacion\bin\Debug\WindowsPresentacion.exe
+C:\Users\joekw\Desktop\Bootcamp Accenture\Clase 9 (o 10)\TP Herencia\WindowsPresentacion\bin\Debug\WindowsPresentacion.pdb
+C:\Users\joekw\Desktop\Bootcamp Accenture\Clase 9 (o 10)\TP Herencia\WindowsPresentacion\bin\Debug\Entidades.dll
+C:\Users\joekw\Desktop\Bootcamp Accenture\Clase 9 (o 10)\TP Herencia\WindowsPresentacion\bin\Debug\Entidades.pdb
+C:\Users\joekw\Desktop\Bootcamp Accenture\Clase 9 (o 10)\TP Herencia\WindowsPresentacion\obj\Debug\WindowsPresentacion.csproj.AssemblyReference.cache
+C:\Users\joekw\Desktop\Bootcamp Accenture\Clase 9 (o 10)\TP Herencia\WindowsPresentacion\obj\Debug\WindowsPresentacion.csproj.SuggestedBindingRedirects.cache
+C:\Users\joekw\Desktop\Bootcamp Accenture\Clase 9 (o 10)\TP Herencia\WindowsPresentacion\obj\Debug\WindowsPresentacion.Form1.resources
+C:\Users\joekw\Desktop\Bootcamp Accenture\Clase 9 (o 10)\TP Herencia\WindowsPresentacion\obj\Debug\WindowsPresentacion.Properties.Resources.resources
+C:\Users\joekw\Desktop\Bootcamp Accenture\Clase 9 (o 10)\TP Herencia\WindowsPresentacion\obj\Debug\WindowsPresentacion.csproj.GenerateResource.cache
+C:\Users\joekw\Desktop\Bootcamp Accenture\Clase 9 (o 10)\TP Herencia\WindowsPresentacion\obj\Debug\WindowsPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\joekw\Desktop\Bootcamp Accenture\Clase 9 (o 10)\TP Herencia\WindowsPresentacion\obj\Debug\WindowsPresentacion.csproj.CopyComplete
+C:\Users\joekw\Desktop\Bootcamp Accenture\Clase 9 (o 10)\TP Herencia\WindowsPresentacion\obj\Debug\WindowsPresentacion.exe
+C:\Users\joekw\Desktop\Bootcamp Accenture\Clase 9 (o 10)\TP Herencia\WindowsPresentacion\obj\Debug\WindowsPresentacion.pdb
