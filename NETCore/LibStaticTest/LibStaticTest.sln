@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibStaticTest", "LibStaticTest\LibStaticTest.csproj", "{A6DF27F9-55C9-465B-872F-A5204844CCDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsStatic", "WindowsFormsStatic\WindowsFormsStatic.csproj", "{6CA87062-2A23-4DFC-BB25-3D0CB682460F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6DF27F9-55C9-465B-872F-A5204844CCDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6DF27F9-55C9-465B-872F-A5204844CCDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6DF27F9-55C9-465B-872F-A5204844CCDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6DF27F9-55C9-465B-872F-A5204844CCDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CA87062-2A23-4DFC-BB25-3D0CB682460F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CA87062-2A23-4DFC-BB25-3D0CB682460F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CA87062-2A23-4DFC-BB25-3D0CB682460F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CA87062-2A23-4DFC-BB25-3D0CB682460F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B98C8DC5-675E-4E12-BFE3-FE07205CB36B}
+	EndGlobalSection
+EndGlobal

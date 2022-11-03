@@ -1,0 +1,14 @@
+D:\Users\Marquitos\source\repos\LibStaticTest\WindowsFormsStatic\bin\Debug\WindowsFormsStatic.exe.config
+D:\Users\Marquitos\source\repos\LibStaticTest\WindowsFormsStatic\bin\Debug\WindowsFormsStatic.exe
+D:\Users\Marquitos\source\repos\LibStaticTest\WindowsFormsStatic\bin\Debug\WindowsFormsStatic.pdb
+D:\Users\Marquitos\source\repos\LibStaticTest\WindowsFormsStatic\bin\Debug\LibStaticTest.dll
+D:\Users\Marquitos\source\repos\LibStaticTest\WindowsFormsStatic\bin\Debug\LibStaticTest.pdb
+D:\Users\Marquitos\source\repos\LibStaticTest\WindowsFormsStatic\obj\Debug\WindowsFormsStatic.csproj.AssemblyReference.cache
+D:\Users\Marquitos\source\repos\LibStaticTest\WindowsFormsStatic\obj\Debug\WindowsFormsStatic.csproj.SuggestedBindingRedirects.cache
+D:\Users\Marquitos\source\repos\LibStaticTest\WindowsFormsStatic\obj\Debug\WindowsFormsStatic.Form1.resources
+D:\Users\Marquitos\source\repos\LibStaticTest\WindowsFormsStatic\obj\Debug\WindowsFormsStatic.Properties.Resources.resources
+D:\Users\Marquitos\source\repos\LibStaticTest\WindowsFormsStatic\obj\Debug\WindowsFormsStatic.csproj.GenerateResource.cache
+D:\Users\Marquitos\source\repos\LibStaticTest\WindowsFormsStatic\obj\Debug\WindowsFormsStatic.csproj.CoreCompileInputs.cache
+D:\Users\Marquitos\source\repos\LibStaticTest\WindowsFormsStatic\obj\Debug\WindowsFormsStatic.csproj.CopyComplete
+D:\Users\Marquitos\source\repos\LibStaticTest\WindowsFormsStatic\obj\Debug\WindowsFormsStatic.exe
+D:\Users\Marquitos\source\repos\LibStaticTest\WindowsFormsStatic\obj\Debug\WindowsFormsStatic.pdb

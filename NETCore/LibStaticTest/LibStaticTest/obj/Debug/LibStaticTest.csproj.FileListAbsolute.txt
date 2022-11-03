@@ -1,0 +1,6 @@
+D:\Users\Marquitos\source\repos\LibStaticTest\LibStaticTest\bin\Debug\LibStaticTest.dll
+D:\Users\Marquitos\source\repos\LibStaticTest\LibStaticTest\bin\Debug\LibStaticTest.pdb
+D:\Users\Marquitos\source\repos\LibStaticTest\LibStaticTest\obj\Debug\LibStaticTest.csproj.AssemblyReference.cache
+D:\Users\Marquitos\source\repos\LibStaticTest\LibStaticTest\obj\Debug\LibStaticTest.csproj.CoreCompileInputs.cache
+D:\Users\Marquitos\source\repos\LibStaticTest\LibStaticTest\obj\Debug\LibStaticTest.dll
+D:\Users\Marquitos\source\repos\LibStaticTest\LibStaticTest\obj\Debug\LibStaticTest.pdb
