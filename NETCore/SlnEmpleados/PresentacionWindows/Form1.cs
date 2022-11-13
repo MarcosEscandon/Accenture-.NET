@@ -20,12 +20,12 @@ namespace PresentacionWindows
 
         private void btnCargar_Click(object sender, EventArgs e)
         {
-            Departamento departamento = new Departamento("001", "Departamento1");
-            Empleado empleado1 = new Empleado("001", "Juan", "Perez", 4200);
+            Departamento departamento = new Departamento(5, "Sistemas");
+            Empleado empleado1 = new Empleado("Jhon", "Doe", 1, 3601);
             empleado1.Departamento = departamento;
-            Empleado empleado2 = new Empleado("002", "Jose", "Sanchez", 4201);
+            Empleado empleado2 = new Empleado("Mark", "Zuck", 2, 3602);
             empleado2.Departamento = departamento;
-            Empleado empleado3 = new Empleado("003", "Maria", "Diaz", 4202);
+            Empleado empleado3 = new Empleado("Robert", "Patt", 3, 3603);
             empleado3.Departamento = departamento;
             List<Empleado> lista = new List<Empleado>();
             lista.Add(empleado1);

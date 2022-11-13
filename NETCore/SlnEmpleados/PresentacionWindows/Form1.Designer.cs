@@ -30,15 +30,13 @@
         {
             this.btnCargar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnMostrar = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.gridEmpleados = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.gridEmpleados)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCargar
             // 
-            this.btnCargar.Location = new System.Drawing.Point(316, 153);
+            this.btnCargar.Location = new System.Drawing.Point(211, 106);
             this.btnCargar.Name = "btnCargar";
             this.btnCargar.Size = new System.Drawing.Size(75, 23);
             this.btnCargar.TabIndex = 0;
@@ -49,52 +47,31 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(248, 158);
+            this.label1.Location = new System.Drawing.Point(143, 111);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(62, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Cargar data";
             // 
-            // dataGridView1
+            // gridEmpleados
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(455, 153);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
-            this.dataGridView1.TabIndex = 2;
-            // 
-            // btnMostrar
-            // 
-            this.btnMostrar.Location = new System.Drawing.Point(316, 225);
-            this.btnMostrar.Name = "btnMostrar";
-            this.btnMostrar.Size = new System.Drawing.Size(75, 23);
-            this.btnMostrar.TabIndex = 3;
-            this.btnMostrar.Text = "Mostrar";
-            this.btnMostrar.UseVisualStyleBackColor = true;
-            this.btnMostrar.Click += new System.EventHandler(this.btnMostrar_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(248, 230);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Mostrar data";
+            this.gridEmpleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridEmpleados.Location = new System.Drawing.Point(350, 106);
+            this.gridEmpleados.Name = "gridEmpleados";
+            this.gridEmpleados.Size = new System.Drawing.Size(240, 150);
+            this.gridEmpleados.TabIndex = 2;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.btnMostrar);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.gridEmpleados);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCargar);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridEmpleados)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -104,9 +81,7 @@
 
         private System.Windows.Forms.Button btnCargar;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button btnMostrar;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridView gridEmpleados;
     }
 }
 
