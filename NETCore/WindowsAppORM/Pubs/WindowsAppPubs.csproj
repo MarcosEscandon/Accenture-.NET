@@ -55,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminDatos\DacStore.cs" />
     <Compile Include="Models\Author.cs" />
     <Compile Include="Models\Discount.cs" />
     <Compile Include="Models\Employee.cs" />
@@ -75,6 +76,9 @@
     <Compile Include="Models\Store.cs" />
     <Compile Include="Models\Title.cs" />
     <Compile Include="Models\Titleauthor.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

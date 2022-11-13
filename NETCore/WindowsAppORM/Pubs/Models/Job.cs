@@ -11,7 +11,7 @@ namespace Pubs
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Job()
         {
-            employees = new HashSet<Employee>();
+            Employees = new HashSet<Employee>();
         }
 
         [Key]
@@ -26,6 +26,6 @@ namespace Pubs
         public byte max_lvl { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Employee> employees { get; set; }
+        public virtual ICollection<Employee> Employees { get; set; }
     }
 }

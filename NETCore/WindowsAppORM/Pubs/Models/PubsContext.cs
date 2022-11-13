@@ -12,17 +12,17 @@ namespace Pubs
         {
         }
 
-        public virtual DbSet<Author> authors { get; set; }
-        public virtual DbSet<Employee> employees { get; set; }
-        public virtual DbSet<Job> jobs { get; set; }
-        public virtual DbSet<pub_info> pub_info { get; set; }
-        public virtual DbSet<Publisher> publishers { get; set; }
-        public virtual DbSet<Sale> sales { get; set; }
-        public virtual DbSet<Store> stores { get; set; }
-        public virtual DbSet<Titleauthor> titleauthors { get; set; }
-        public virtual DbSet<Title> titles { get; set; }
-        public virtual DbSet<Discount> discounts { get; set; }
-        public virtual DbSet<Roysched> royscheds { get; set; }
+        public virtual DbSet<Author> Authors { get; set; }
+        public virtual DbSet<Employee> Employees { get; set; }
+        public virtual DbSet<Job> Jobs { get; set; }
+        public virtual DbSet<pub_info> Pub_info { get; set; }
+        public virtual DbSet<Publisher> Publishers { get; set; }
+        public virtual DbSet<Sale> Sales { get; set; }
+        public virtual DbSet<Store> Stores { get; set; }
+        public virtual DbSet<Titleauthor> Titleauthors { get; set; }
+        public virtual DbSet<Title> Titles { get; set; }
+        public virtual DbSet<Discount> Discounts { get; set; }
+        public virtual DbSet<Roysched> Royscheds { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -62,8 +62,8 @@ namespace Pubs
                 .IsUnicode(false);
 
             modelBuilder.Entity<Author>()
-                .HasMany(e => e.titleauthors)
-                .WithRequired(e => e.author)
+                .HasMany(e => e.Titleauthors)
+                .WithRequired(e => e.Author)
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Employee>()
@@ -94,7 +94,7 @@ namespace Pubs
                 .IsUnicode(false);
 
             modelBuilder.Entity<Job>()
-                .HasMany(e => e.employees)
+                .HasMany(e => e.Employees)
                 .WithRequired(e => e.job)
                 .WillCascadeOnDelete(false);
 
@@ -130,7 +130,7 @@ namespace Pubs
                 .IsUnicode(false);
 
             modelBuilder.Entity<Publisher>()
-                .HasMany(e => e.employees)
+                .HasMany(e => e.Employees)
                 .WithRequired(e => e.publisher)
                 .WillCascadeOnDelete(false);
 
@@ -183,7 +183,7 @@ namespace Pubs
                 .IsUnicode(false);
 
             modelBuilder.Entity<Store>()
-                .HasMany(e => e.sales)
+                .HasMany(e => e.Sales)
                 .WithRequired(e => e.store)
                 .WillCascadeOnDelete(false);
 

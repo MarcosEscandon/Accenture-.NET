@@ -11,7 +11,7 @@ namespace Pubs
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Author()
         {
-            titleauthors = new HashSet<Titleauthor>();
+            Titleauthors = new HashSet<Titleauthor>();
         }
 
         [Key]
@@ -45,6 +45,6 @@ namespace Pubs
         public bool contract { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Titleauthor> titleauthors { get; set; }
+        public virtual ICollection<Titleauthor> Titleauthors { get; set; }
     }
 }

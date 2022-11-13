@@ -11,8 +11,8 @@ namespace Pubs
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Store()
         {
-            sales = new HashSet<Sale>();
-            discounts = new HashSet<Discount>();
+            Sales = new HashSet<Sale>();
+            Discounts = new HashSet<Discount>();
         }
 
         [Key]
@@ -35,9 +35,9 @@ namespace Pubs
         public string zip { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Sale> sales { get; set; }
+        public virtual ICollection<Sale> Sales { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Discount> discounts { get; set; }
+        public virtual ICollection<Discount> Discounts { get; set; }
     }
 }

@@ -11,32 +11,32 @@ namespace Pubs
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Publisher()
         {
-            employees = new HashSet<Employee>();
-            titles = new HashSet<Title>();
+            Employees = new HashSet<Employee>();
+            Titles = new HashSet<Title>();
         }
 
         [Key]
         [StringLength(4)]
-        public string pub_id { get; set; }
+        public string Pub_id { get; set; }
 
         [StringLength(40)]
-        public string pub_name { get; set; }
+        public string Pub_name { get; set; }
 
         [StringLength(20)]
-        public string city { get; set; }
+        public string City { get; set; }
 
         [StringLength(2)]
-        public string state { get; set; }
+        public string State { get; set; }
 
         [StringLength(30)]
-        public string country { get; set; }
+        public string Country { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Employee> employees { get; set; }
+        public virtual ICollection<Employee> Employees { get; set; }
 
-        public virtual pub_info pub_info { get; set; }
+        public virtual pub_info Pub_info { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Title> titles { get; set; }
+        public virtual ICollection<Title> Titles { get; set; }
     }
 }
