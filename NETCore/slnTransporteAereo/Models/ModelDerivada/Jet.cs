@@ -44,12 +44,7 @@ namespace Models.ModelDerivada
                 $"Cantidad de pasajeros del Jet: {Capacidad}";
         }
 
-        public string AgregarAzafata(Azafata azafata)
-        {
-            Tripulacion.Azafatas.Add(azafata);
-
-            return "Nombre: " + azafata.Nombre + "Apellido: " + azafata.Apellido;
-        }
+        
     }
      
 }

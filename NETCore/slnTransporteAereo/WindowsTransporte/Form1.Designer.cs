@@ -30,6 +30,7 @@
         {
             this.btnMostrarHelicoptero = new System.Windows.Forms.Button();
             this.btnMostrarJet = new System.Windows.Forms.Button();
+            this.btnQuitar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnMostrarHelicoptero
@@ -52,11 +53,21 @@
             this.btnMostrarJet.UseVisualStyleBackColor = true;
             this.btnMostrarJet.Click += new System.EventHandler(this.btnMostrarJet_Click);
             // 
+            // btnQuitar
+            // 
+            this.btnQuitar.Location = new System.Drawing.Point(240, 266);
+            this.btnQuitar.Name = "btnQuitar";
+            this.btnQuitar.Size = new System.Drawing.Size(111, 23);
+            this.btnQuitar.TabIndex = 2;
+            this.btnQuitar.Text = "Eliminar Azafata";
+            this.btnQuitar.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(595, 344);
+            this.Controls.Add(this.btnQuitar);
             this.Controls.Add(this.btnMostrarJet);
             this.Controls.Add(this.btnMostrarHelicoptero);
             this.Name = "Form1";
@@ -69,6 +80,7 @@
 
         private System.Windows.Forms.Button btnMostrarHelicoptero;
         private System.Windows.Forms.Button btnMostrarJet;
+        private System.Windows.Forms.Button btnQuitar;
     }
 }
 
