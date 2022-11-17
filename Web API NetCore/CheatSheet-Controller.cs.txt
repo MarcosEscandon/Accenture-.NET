@@ -1,0 +1,116 @@
+on CLASSController.cs
+
+using Microsoft.EntityFrameworkCore; //
+using System.Collections.Generic; // !! para crear List<> o IEnumerable
+using System.Linq;              // !! para el ToList()
+using WebApiEscuela.Data; // !! proyecto.data
+using WebApiEscuela.Models; // !! proyecto.models
+
+...
+
+
+public class AlumnoController : ControllerBase
+    {
+        public DBEscuelaAPIContext Context { get; set; }     // Propiedad context
+
+        public AlumnoController(DBEscuelaAPIContext context)  // Constructor
+        {
+            this.Context = context;
+        }
+
+
+        [HttpGet]
+        public List<Alumno>Get()
+        {
+            List<Alumno> alumnos = Context.Alumnos.ToList();
+            return alumnos;
+        }
+
+        [HttpGet("{id}")]
+        public Alumno Get(int id)
+        {
+            Alumno alumno = Context.Alumnos.Find(id);
+            return alumno;
+            var resultado = context.Alumnos.FirstOrDefault( x=> x.Id == id);
+            if (resultado == null)
+            {
+                return NotFound();
+            }
+            return resultado;
+        }
+
+        [HttpPost]
+        public ActionResult Post(Alumno alumno)
+        {
+            Context.Alumnos.Add(alumno);
+            Context.SaveChanges();
+            return Ok();
+        }
+
+        [HttpPut("{id}")]
+        public ActionResult Put(int id, [FromBody] Alumno alumno)
+        {
+            if (id != alumno.Id)
+            {
+                return BadRequest();
+            }
+
+            Context.Entry(alumno).State= EntityState.Modified;
+            Context.SaveChanges();
+
+            return NoContent();
+        }
+
+        [HttpDelete("{id}")]
+        public ActionResult<Alumno> Delete(int id)
+        {
+            Alumno alumno = Context.Alumnos.Find(id);
+            if (alumno == null)
+            {
+                return NotFound();
+            }
+
+            Context.Alumnos.Remove(alumno);
+            Context.SaveChanges();
+
+            return alumno;
+        }
+
+
+
+===========================================================================
+Crear Mapa de Objetos Relacionales desde una BD Existente.
+On Package Manager Console //Server=your-server //Database=DBName:
+
+Scaffold-DbContext "Server=.;Database=Pubs;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+
+===========================================================================
+Indicar connectionStrings.
+On appsettings.json
+
+"AllowedHosts": "*",
+  "ConnectionStrings": {
+    "KeyDBEscuelaAPI": "Data Source=.;Initial Catalog=DBNAME;Integrated Security=True"
+	}
+
+===========================================================================
+Indicar connstructor en startup
+On startup.cs
+
+services.AddControllers();
+services.AddDbContext<DBNAMEContext>(options => options.UseSqlServer(Configuration.GetConnectionString("KeyDBNAME")));
+
+===========================================================================
+Crear CLASSController.cs in Controllers folder
+
+public class PublisherController : ControllerBase
+    {
+        private readonly PubsContext _context;
+        public PublisherController(PubsContext context)
+        {
+            _context = context;
+        }
+    }
+
+===========================================================================
+Project  → Properties → Debug → debug launch profiles → api/publisher
