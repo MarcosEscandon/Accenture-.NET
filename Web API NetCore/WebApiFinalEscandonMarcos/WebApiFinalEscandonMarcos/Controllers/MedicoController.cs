@@ -13,25 +13,25 @@ namespace WebApiFinalEscandonMarcos.Controllers
     [ApiController]
     public class MedicoController : ControllerBase
     {
-        public HospitalContext Context { get; set; }    //Generar propiedad con nuestra clase de DATA
+        public HospitalContext Context { get; set; }    
 
-        public MedicoController(HospitalContext context)   //Generar constructor Con nuesta clase de DATA
+        public MedicoController(HospitalContext context)   
         {
             this.Context = context;
         }
 
-
+        // api/medico
         [HttpGet]
         public List<Doctor> Get()
         {
             //EF
-            List<Doctor> doctores = Context.Doctores.ToList(); //trae a todos
+            List<Doctor> doctores = Context.Doctores.ToList(); 
 
-            return doctores; // retornamos la lista 
+            return doctores;  
         }
 
 
-
+        // api/medico/1
         [HttpGet("{id}")]
         public Doctor Get(int id)
         {
@@ -41,11 +41,11 @@ namespace WebApiFinalEscandonMarcos.Controllers
             return doctor;
         }
 
-
+        // api/medico/1
         [HttpPost]
         public ActionResult Post(Doctor doctor)
         {
-            //USANDO EF-- memoria
+            //USANDO EF en memoria
             Context.Doctores.Add(doctor);
 
             //EF- Guardamos en la base
@@ -54,6 +54,7 @@ namespace WebApiFinalEscandonMarcos.Controllers
             return Ok();
         }
 
+        // api/medico/1
         [HttpDelete("{id}")]
         public ActionResult<Doctor> Delete(int id)
         {
@@ -72,6 +73,7 @@ namespace WebApiFinalEscandonMarcos.Controllers
             return doctor;
         }
 
+        // api/medico/1
         [HttpPut("{id}")]
         public ActionResult Put(int id, Doctor doctor)
         {
@@ -85,12 +87,12 @@ namespace WebApiFinalEscandonMarcos.Controllers
             Context.Entry(doctor).State = EntityState.Modified;
             Context.SaveChanges();
 
-            return NoContent(); //NOCONTEXT ES EL 204
+            return NoContent(); // 204
         }
 
 
 
-
+        // api/medico/especialidad/general
         [HttpGet("especialidad/{Especialidad}")]
         public IEnumerable<Doctor> GetbyEspecialidad(string especialidad)
         {

@@ -20,6 +20,7 @@ namespace WebApiFinalEscandonMarcos.Controllers
             this.Context = context;
         }
 
+        // api/hospital
         [HttpGet]
         public List<Hospital> Get()
         {
@@ -29,7 +30,7 @@ namespace WebApiFinalEscandonMarcos.Controllers
             return hospitales; 
         }
 
-
+        // api/hospital/1
         [HttpGet("{Num_Cama}")]
         public IEnumerable<Hospital> Get(int num_cama)
         {
