@@ -6,6 +6,7 @@ using System.Linq;              // !! para el ToList()
 using WebApiEscuela.Data; // !! proyecto.data
 using WebApiEscuela.Models; // !! proyecto.models
 
+
 ...
 
 
@@ -82,7 +83,7 @@ public class AlumnoController : ControllerBase
 Crear Mapa de Objetos Relacionales desde una BD Existente.
 On Package Manager Console //Server=your-server //Database=DBName:
 
-Scaffold-DbContext "Server=.;Database=Pubs;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+Scaffold-DbContext "Server=.;Database=DBNAME;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
 
 ===========================================================================
 Indicar connectionStrings.
@@ -90,7 +91,7 @@ On appsettings.json
 
 "AllowedHosts": "*",
   "ConnectionStrings": {
-    "KeyDBEscuelaAPI": "Data Source=.;Initial Catalog=DBNAME;Integrated Security=True"
+    "KeyDBNAMEApi": "Data Source=.;Initial Catalog=DBNAME;Integrated Security=True"
 	}
 
 ===========================================================================
@@ -98,15 +99,15 @@ Indicar connstructor en startup
 On startup.cs
 
 services.AddControllers();
-services.AddDbContext<DBNAMEContext>(options => options.UseSqlServer(Configuration.GetConnectionString("KeyDBNAME")));
+services.AddDbContext<DBNAMEContext>(options => options.UseSqlServer(Configuration.GetConnectionString("KeyDBNAMEApi")));
 
 ===========================================================================
 Crear CLASSController.cs in Controllers folder
 
-public class PublisherController : ControllerBase
+public class CLASSController : ControllerBase
     {
-        private readonly PubsContext _context;
-        public PublisherController(PubsContext context)
+        private readonly DBNAMEContext _context;
+        public CLASSController(DBNAMEContext context)
         {
             _context = context;
         }
