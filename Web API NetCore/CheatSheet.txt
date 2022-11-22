@@ -1,3 +1,94 @@
+Prepare project.
+Add NuGet packages → EntityFrameworkCore // EntityFrameworkCore.SqlServer // EntityFrameworkCore.Tools
+
+===========================================================================
+A) Crear DB.
+Crear Data folder → crear DBNAMEContext.cs class
+
+    public class AutoContext : DbContext
+    {  
+        public AutoContext(DbContextOptions<AutoContext> options) : base(options) { }
+
+        public DbSet<Auto> Autos { get; set; }
+        
+    }
+
+Definir Tablas.
+Crear Models folder → crear CLASS.cs
+
+  [Table("TABLENAME")]
+    public class CLASS
+    {
+       [Key]
+        public int PROP1 { get; set; }
+        [Required]
+        [Column(TypeName = "varchar(50)")]
+
+        public string PROP2 { get; set; }
+        [Required]
+        [Column(TypeName = "varchar(50)")]
+
+        public string PROP3 { get; set; }
+        [Column(TypeName = "varchar(50)")]
+
+        public string PROP4 { get; set; }
+        [Column(TypeName = "varchar(50)")]
+
+        public decimal PROP5 { get; set; }
+    }
+
+===========================================================================
+===========================================================================
+B) Crear Mapa de Objetos Relacionales desde una BD Existente.
+On Package Manager Console //Server=your-server //Database=DBName:
+
+Scaffold-DbContext "Server=.;Database=DBNAME;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+
+===========================================================================
+===========================================================================
+Indicar connectionStrings.
+On appsettings.json
+
+"AllowedHosts": "*",
+  "ConnectionStrings": {
+    "KeyDBNAMEKey": "Data Source=.;Initial Catalog=DBNAME;Integrated Security=True"
+	}
+
+===========================================================================
+Indicar connstructor en startup.
+On startup.cs
+
+public void ConfigureServices(IServiceCollection services)
+{
+	services.AddControllers();
+	services.AddDbContext<DBNAMEContext>(options => options.UseSqlServer(Configuration.GetConnectionString("KeyDBNAME")));
+}
+
+===========================================================================
+Create Controller in Controllers folder.
+CLASSController.cs
+
+public class CLASSController : ControllerBase
+    {
+        private readonly DBNAMEContext _context;
+        public CLASSController(DBNAMEContext context)
+        {
+            _context = context;
+        }
+    }
+
+===========================================================================
+Agregar Migraciones
+On Package Manager Console.
+
+add-migration DBNAME
+update-database
+
+===========================================================================
+Project  → Properties → Debug → debug launch profiles → api/publisher
+
+===========================================================================
+define Methods.
 on CLASSController.cs
 
 using Microsoft.EntityFrameworkCore; //
@@ -6,9 +97,7 @@ using System.Linq;              // !! para el ToList()
 using WebApiEscuela.Data; // !! proyecto.data
 using WebApiEscuela.Models; // !! proyecto.models
 
-
 ...
-
 
 public class AlumnoController : ControllerBase
     {
@@ -76,42 +165,3 @@ public class AlumnoController : ControllerBase
 
             return alumno;
         }
-
-
-
-===========================================================================
-Crear Mapa de Objetos Relacionales desde una BD Existente.
-On Package Manager Console //Server=your-server //Database=DBName:
-
-Scaffold-DbContext "Server=.;Database=DBNAME;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
-
-===========================================================================
-Indicar connectionStrings.
-On appsettings.json
-
-"AllowedHosts": "*",
-  "ConnectionStrings": {
-    "KeyDBNAMEApi": "Data Source=.;Initial Catalog=DBNAME;Integrated Security=True"
-	}
-
-===========================================================================
-Indicar connstructor en startup
-On startup.cs
-
-services.AddControllers();
-services.AddDbContext<DBNAMEContext>(options => options.UseSqlServer(Configuration.GetConnectionString("KeyDBNAMEApi")));
-
-===========================================================================
-Crear CLASSController.cs in Controllers folder
-
-public class CLASSController : ControllerBase
-    {
-        private readonly DBNAMEContext _context;
-        public CLASSController(DBNAMEContext context)
-        {
-            _context = context;
-        }
-    }
-
-===========================================================================
-Project  → Properties → Debug → debug launch profiles → api/publisher
