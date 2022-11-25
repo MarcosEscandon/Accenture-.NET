@@ -1,6 +1,6 @@
 Create ASP .NET Web App (NET Framework) → Empty // MVC // NO HTTPS
 
-Install EntityFrameWork on proejct NuGet
+Install EntityFrameWork on project → NuGet
 
 ===========================================================================
 Create Data folder
