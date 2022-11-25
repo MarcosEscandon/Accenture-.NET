@@ -41,7 +41,7 @@ A) Create DB
 in Package Manager Console
 
 enable-migrations
-add-migration NAME
+add-migration NAME 
 update-database
 
 ===========================================================================
