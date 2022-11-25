@@ -47,11 +47,13 @@ Scaffold-DbContext "Server=.;Database=DBNAME;Trusted_Connection=True;" Microsoft
 ===========================================================================
 ===========================================================================
 Indicar connectionStrings.
+Project properties → Settings → Name: keyDBNAME // (ConnectionString) // Application / "..." → Server name: . → database name: DBNAME
+
 On appsettings.json
 
 "AllowedHosts": "*",
   "ConnectionStrings": {
-    "KeyDBNAMEKey": "Data Source=.;Initial Catalog=DBNAME;Integrated Security=True"
+    "keyDBNAME": "Data Source=.;Initial Catalog=DBNAME;Integrated Security=True"
 	}
 
 ===========================================================================
