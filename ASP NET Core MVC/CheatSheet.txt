@@ -1,0 +1,47 @@
+Create ASP .NET Web App (NET Framework) → Empty // MVC // NO HTTPS
+
+Install EntityFrameWork on proejct NuGet
+
+===========================================================================
+Create Data folder
+Create class DBContext
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Data.Entity;
+using PhotoSharingApplication.Models;
+
+
+namespace NAMESPACE.Data
+{
+    public class DBNAMEContext : DbContext 
+    {
+        public DBNAMEContext() : base("keyDBNAME") { }
+
+        public DbSet<CLASS> CLASSES { get; set; }
+
+    }
+}
+
+===========================================================================
+Add connectionStrings
+Project properties → Settings → Name: keyDBNAME // (ConnectionString) // Application / "..." → Server name: . → database name: DBNAMEMVC
+
+in Web.config
+
+</configSections>
+  <connectionStrings>
+    <add name="OperasWebSite.Properties.Settings.keyDBNAME" connectionString="Data Source=.;InitialCatalog=DBNAMEMVC; Integrated Security=True" />
+  </connectionStrings>
+
+===========================================================================
+A) Create DB
+in Package Manager Console
+
+enable-migrations
+add-migration NAME
+update-database
+
+===========================================================================
