@@ -1,0 +1,112 @@
+CONTROLLER
+
+Crear clase personalizada de tipo filtro “MyFilterAttribute”→ programar los actions filters
+
+[MyFilterAttribute]
+class ProductoController…
+{
+
+}
+
+[MyFilterAttribute]
+class CategoriaController…
+{
+
+}
+
+=========================================================================
+OutputCache →Mantener en cache una vista por x tiempo
+
+/producto
+
+[OutputCache(duration=60) ]
+public ActionResult Index(){
+…
+…
+
+return View(“Index”, lista);
+}
+
+=========================================================================
+Exceptions filters
+[ErrorHandler]
+public ActionResult Index(){
+…
+…
+
+return View(“Index”, lista);
+}
+
+=========================================================================
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        <h1>Bienvenidos al sistema demo MVC</h1>
+    </div>
+</body>
+</html>
+
+=========================================================================
+public class HomeController : Controller
+    {
+        // GET: Home
+        public ActionResult Index()
+        {
+            return View();
+        }
+
+        /*filtros de acción*/
+        //Antes de invocar el acción
+        protected override void OnActionExecuting(ActionExecutingContext filterContext)
+        {
+            // base.OnActionExecuting(filterContext);
+            Debug.WriteLine("Antes de invocar el acción - OnActionExecuting");
+        }
+
+        //Despúes de invocar el acción
+        protected override void OnActionExecuted(ActionExecutedContext filterContext)
+        {
+            Debug.WriteLine("Despúes de invocar el acción - OnActionExecuted");
+        }
+
+    }
+
+=========================================================================
+Crear una clase especial de action filter
+using System.Diagnostics;
+using System.Web.Mvc;
+namespace OperasWebSite.Filters
+{
+    public class MyActionFilterAttibute:ActionFilterAttribute
+    {
+        public override void OnActionExecuting(ActionExecutingContext filterContext)
+        {
+            Debug.WriteLine("Antes de invocar el acción - OnActionExecuting");
+        }
+
+        public override void OnActionExecuted(ActionExecutedContext filterContext)
+        {
+            Debug.WriteLine("Despúes de invocar el acción - OnActionExecuted");
+        }
+    }
+}
+
+=========================================================================
+=========================================================================
+VISTAS
+
+Create folders in View folder → Right click → Add view.
+Index.cshtml
+
+
+
+In MODELController.cs → click derecho en Action Deseada → Add view
+
+Deseada.cshtml
+

@@ -100,6 +100,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PhotoController.cs" />
     <Compile Include="Data\PhotoDBContext.cs" />
     <Compile Include="Global.asax.cs">
@@ -108,6 +109,10 @@
     <Compile Include="Migrations\202211251901526_initial.cs" />
     <Compile Include="Migrations\202211251901526_initial.designer.cs">
       <DependentUpon>202211251901526_initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202211282056287_DB.cs" />
+    <Compile Include="Migrations\202211282056287_DB.designer.cs">
+      <DependentUpon>202211282056287_DB.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Comment.cs" />
@@ -126,6 +131,11 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Content Include="Views\Photo\Display.cshtml" />
+    <Content Include="Views\Photo\Create.cshtml" />
+    <Content Include="Views\Shared\_PhotoGallery.cshtml" />
+    <Content Include="Views\Photo\Index.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -135,11 +145,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Photo\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202211251901526_initial.resx">
       <DependentUpon>202211251901526_initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211282056287_DB.resx">
+      <DependentUpon>202211282056287_DB.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

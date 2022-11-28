@@ -76,3 +76,4 @@ D:\Users\Marquitos\source\repos\PhotoSharingApplication\PhotoSharingApplication\
 D:\Users\Marquitos\source\repos\PhotoSharingApplication\PhotoSharingApplication\bin\EntityFramework.SqlServer.xml
 D:\Users\Marquitos\source\repos\PhotoSharingApplication\PhotoSharingApplication\obj\Debug\PhotoSharingApplication.Migrations.initial.resources
 D:\Users\Marquitos\source\repos\PhotoSharingApplication\PhotoSharingApplication\obj\Debug\PhotoSharingApplication.csproj.GenerateResource.cache
+D:\Users\Marquitos\source\repos\PhotoSharingApplication\PhotoSharingApplication\obj\Debug\PhotoSharingApplication.Migrations.DB.resources

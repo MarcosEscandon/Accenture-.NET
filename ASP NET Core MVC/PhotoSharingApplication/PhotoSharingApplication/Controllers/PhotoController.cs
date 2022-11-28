@@ -16,7 +16,28 @@ namespace PhotoSharingApplication.Controllers
         // GET: Photo
         public ActionResult Index()
         {
-            return View("Index",context.Photos.ToList());
+           return View("Index");   
+        }
+
+        [ChildActionOnly]
+        public ActionResult _PhotoGallery(int number = 0)
+        {
+            List<Photo> photos;
+            if (number == 0)
+            {
+                photos = context.Photos.ToList();
+            }
+
+            else
+            {
+                photos = (
+                from p in context.Photos
+                orderby p.CreatedDate descending
+                select p).Take(number).ToList();
+            }
+
+            return PartialView("_PhotoGallery",photos);
+
         }
 
         public ActionResult Display(int id)
