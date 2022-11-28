@@ -11,8 +11,7 @@ namespace PhotoSharingApplication.Data
     public class PhotoDBContext : DbContext 
     {
         public PhotoDBContext() : base("keyPhotoDB") { }
-
         public DbSet<Photo> Photos { get; set; }
-
+        public DbSet<Comment> Comments { get; set; }
     }
 }

@@ -3,22 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+
 using System.Globalization;
 using PhotoSharingApplication.Models;
+using System.Runtime.Remoting.Contexts;
 using PhotoSharingApplication.Data;
 
 namespace PhotoSharingApplication.Controllers
 {
+
     public class PhotoController : Controller
     {
         private PhotoDBContext context = new PhotoDBContext();
-
         // GET: Photo
         public ActionResult Index()
         {
-           return View("Index");   
-        }
 
+            return View("Index");
+        }
         [ChildActionOnly]
         public ActionResult _PhotoGallery(int number = 0)
         {
@@ -27,7 +29,6 @@ namespace PhotoSharingApplication.Controllers
             {
                 photos = context.Photos.ToList();
             }
-
             else
             {
                 photos = (
@@ -35,26 +36,24 @@ namespace PhotoSharingApplication.Controllers
                 orderby p.CreatedDate descending
                 select p).Take(number).ToList();
             }
+            return PartialView("_PhotoGallery", photos);
 
-            return PartialView("_PhotoGallery",photos);
+
 
         }
+
 
         public ActionResult Display(int id)
         {
             Photo photo = context.Photos.Find(id);
-
             if (photo == null)
             {
                 return HttpNotFound();
             }
-            else
-            {
-                return View("Display", photo);
-            }   
+
+            return View("Display", photo);
         }
 
-        // GET: Photo/Create
         public ActionResult Create()
         {
             Photo newPhoto = new Photo();
@@ -63,7 +62,6 @@ namespace PhotoSharingApplication.Controllers
             return View("Create", newPhoto);
         }
 
-        // POST: Photo/Create
         [HttpPost]
         public ActionResult Create(Photo photo, HttpPostedFileBase image)
         {
@@ -90,11 +88,9 @@ namespace PhotoSharingApplication.Controllers
             return RedirectToAction("Index");
         }
 
-        // DELETE: Photo/Delete
         public ActionResult Delete(int id)
         {
             Photo photo = context.Photos.Find(id);
-
             if (photo == null)
             {
                 return HttpNotFound();
@@ -102,22 +98,20 @@ namespace PhotoSharingApplication.Controllers
             return View("Delete", photo);
         }
 
-        // DELETE: Photo/Delete
         [HttpPost]
         [ActionName("Delete")]
         public ActionResult DeleteConfirmed(int id)
         {
             Photo photo = context.Photos.Find(id);
+
             context.Photos.Remove(photo);
             context.SaveChanges();
             return RedirectToAction("Index");
         }
 
-        // GET: Photo/GetImage
         public FileContentResult GetImage(int id)
         {
             Photo photo = context.Photos.Find(id);
-
             if (photo != null)
             {
                 return File(photo.PhotoFile, photo.ImageMimeType);
