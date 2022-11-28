@@ -105,7 +105,6 @@ Create folders in View folder → Right click → Add view.
 Index.cshtml
 
 
-
 In MODELController.cs → click derecho en Action Deseada → Add view
 
 Deseada.cshtml
