@@ -1,0 +1,27 @@
+﻿@model SistemaTransporteWeb.Models.Auto
+
+
+<p>Desea eliminar está opera?</p>
+
+@using (Html.BeginForm("Delete", "Auto", FormMethod.Post))
+{
+    <div>
+        <span>@Html.DisplayNameFor(model => model.Marca)</span>
+        <span>@Html.DisplayFor(model => model.Modelo)</span>
+        <span>@Html.DisplayNameFor(model => model.Anio)</span>
+        <span>@Html.DisplayFor(model => model.Color)</span>
+    </div>
+    <input type="submit" value="Delete" />
+}
+
+<p>
+    @Html.ActionLink("Go to index", "Index", "Auto")
+</p>
+
+
+@section nav{
+    <ul>
+        <li>@Html.ActionLink("Go to Auto", "Index", "Auto")</li>
+        <li>@Html.ActionLink("Go to Home", "Index", "Home")</li>
+    </ul>
+}

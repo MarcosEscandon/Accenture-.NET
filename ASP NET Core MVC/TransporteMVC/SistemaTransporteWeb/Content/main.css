@@ -1,0 +1,53 @@
+﻿body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+header {
+    display:flex;
+    justify-content:space-between;
+}
+
+    header div {
+        border: 2px solid black;
+        margin: 20px;
+        padding: 20px;
+    }
+
+
+.ads {
+    width: 20%;
+}
+
+.Titulo {
+    width: 70%;
+}
+
+.elgrande{
+    display:flex;
+    padding:20px;
+
+}
+
+nav {
+    border: 2px solid black;
+    margin-right: 20px;
+    width:15%;
+    text-align:center;
+}
+
+.cont-footer {
+    width: 85%;
+}
+
+.content {
+    border: 2px solid black;
+    height:90%;
+}
+
+footer {
+    margin-top: 20px;
+    border: 2px solid black;
+    height: 5%;
+}

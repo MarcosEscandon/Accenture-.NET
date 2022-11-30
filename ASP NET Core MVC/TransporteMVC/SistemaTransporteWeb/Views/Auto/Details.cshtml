@@ -1,0 +1,35 @@
+﻿
+@model SistemaTransporteWeb.Models.Auto
+
+<fieldset>
+    <legend>Auto Detail</legend>
+    <div>
+        @Html.DisplayFor(model => model.AutoId)
+    </div>
+    <div>
+        @Html.DisplayFor(model => model.Modelo)
+    </div>
+
+    <div>
+        @Html.DisplayNameFor(model => model.Marca)
+    </div>
+    <div>
+        @Html.DisplayFor(model => model.Anio)
+    </div>
+    <div>
+        @Html.DisplayNameFor(model => model.Color)
+    </div>
+
+</fieldset>
+<p>
+    @Html.ActionLink("Go to index", "Index", "Auto")
+</p>
+
+
+
+@section nav{
+    <ul>
+        <li>@Html.ActionLink("Go to Auto", "Index", "Auto")</li>
+        <li>@Html.ActionLink("Go to Home", "Index", "Home")</li>
+    </ul>
+}

@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/main.css" rel="stylesheet" />
+</head>
+<body>
+
+
+    <header>
+        <div class="Titulo">
+            Header
+        </div>
+        <div class='ads'>
+            Ads
+        </div>
+    </header>
+
+
+    <div class="elgrande">
+        <nav>
+            <!--Nav-->
+            <h2>Nav</h2>
+            @RenderSection("nav")
+        </nav>
+
+        <div class='cont-footer'>
+            <div class="content">
+                @RenderBody()
+            </div>
+
+            <footer>
+                <!--Zona Footer-->
+                <p>Footer</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

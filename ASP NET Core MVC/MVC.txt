@@ -1,3 +1,10 @@
+In web.config
+
+<connectionStrings>
+    <add name="keyDBNAMEDB" connectionString="Data Source=.;Initial Catalog=DBNAMEDB;Integrated Security=True" providerName="System.Data.SqlClient" />
+  </connectionStrings
+
+=========================================================================
 CONTROLLER
 
 Crear clase personalizada de tipo filtro “MyFilterAttribute”→ programar los actions filters
@@ -108,4 +115,14 @@ Index.cshtml
 In MODELController.cs → click derecho en Action Deseada → Add view
 
 Deseada.cshtml
+
+=========================================================================
+en Views folder → Nueva vista → _ViewStart.cshtml
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+=========================================================================
+Cuando agregas nueva vista marcar "Use layout page"
 

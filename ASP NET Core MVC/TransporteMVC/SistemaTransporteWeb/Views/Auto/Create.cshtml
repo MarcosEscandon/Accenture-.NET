@@ -1,0 +1,40 @@
+﻿
+@model SistemaTransporteWeb.Models.Auto
+
+<h1> New Auto </h1>
+@using (Html.BeginForm("Create", "Auto", FormMethod.Post))
+{
+    <p>
+        @Html.LabelFor(Model => Model.Modelo)
+        @Html.EditorFor(model => model.Modelo)
+        @Html.ValidationMessageFor(Model => Model.Modelo)
+    </p>
+    <p>
+        @Html.LabelFor(Model => Model.Marca)
+        @Html.EditorFor(model => model.Marca)
+        @Html.ValidationMessageFor(Model => Model.Marca)
+    </p>
+    <p>
+        @Html.LabelFor(Model => Model.Anio)
+        @Html.EditorFor(model => model.Anio)
+        @Html.ValidationMessageFor(Model => Model.Anio)
+    </p>
+    <p>
+        @Html.LabelFor(Model => Model.Color)
+        @Html.EditorFor(model => model.Color)
+        @Html.ValidationMessageFor(Model => Model.Color)
+    </p>
+    <br />
+    <br />
+    <input type="submit" action="Create" />
+
+    @Html.ActionLink("Go to Index", "Index", "Auto")
+}
+
+
+@section nav{
+    <ul>
+        <li>@Html.ActionLink("Go to Auto", "Index", "Auto")</li>
+        <li>@Html.ActionLink("Go to Home", "Index", "Home")</li>
+    </ul>
+}

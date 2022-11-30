@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<div>
+    <h3>Fecha :@ViewBag.Fecha</h3>
+    <h2>Bienvenido al sitio Web!</h2>
+</div>
+
+@section nav{
+    <ul>
+        <li>@Html.ActionLink("Go to Auto", "Index", "Auto")</li>
+        <li>@Html.ActionLink("Go to Home", "Index", "Home")</li>
+    </ul>
+}
