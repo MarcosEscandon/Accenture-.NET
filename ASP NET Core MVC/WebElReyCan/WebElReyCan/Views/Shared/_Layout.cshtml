@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/main.css" rel="stylesheet" />
+</head>
+<body>
+
+
+    <header>
+
+    </header>
+    <nav>
+        @Html.ActionLink("Nuevo Turno", "Create", "Turno")
+        @Html.ActionLink("Turnos de Hoy", "IndexToday", "Turno")
+        @Html.ActionLink("Todos los Turnos", "Index", "Turno")
+    </nav>
+    <main>
+        @RenderBody()
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
