@@ -1,0 +1,59 @@
+﻿@model SistemaWebEmpleado.Models.Empleado
+
+@{
+    ViewBag.Title = "Empleado";
+}
+
+@section sidebar {
+    Administración de empleados.
+}
+
+    <h1 class="fw-bold">Detalle</h1>
+    <fieldset>
+        <legend>Detalles del empleado @Model.Id</legend>
+        <table>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Id)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Nombre)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Apellido)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DNI)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Legajo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Titulo)
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    @Html.DisplayFor(model => model.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.Nombre)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.Apellido)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.DNI)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.Legajo)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.Titulo)
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <p>
+        @Html.ActionLink("Volver al listado", "Index", "Empleado")
+    </p>

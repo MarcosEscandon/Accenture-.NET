@@ -1,0 +1,110 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial Rounded MT', sans-serif;
+}
+
+table * {
+    padding: 20px 20px;
+}
+
+.container {
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    background-color: lightblue;
+    padding: 15px;
+}
+
+section {
+    width: 10%;
+    background-color: lightcyan;
+    padding: 15px;
+}
+
+#content {
+    background-color: white;
+    padding: 40px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a:visited {
+    color: black;
+}
+
+a:active {
+    color: black;
+}
+
+a:link {
+    color: black;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+p a, table a {
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: 0.2s;
+    border-radius: 15px;
+    background-color: rgba(170, 170, 170, 0.1);
+}
+
+    p a:hover, table a:hover {
+        color: lightseagreen;
+        background-color: rgba(0,0,0, 0.1);
+    }
+
+p {
+    margin: 15px 0px;
+}
+
+input[type="submit"] {
+    padding: 5px 25px;
+}
+
+nav {
+    background-color: #e1e1e1;
+}
+
+    nav ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    nav li {
+        padding: 15px 10px;
+        transition: 0.3s;
+    }
+
+        nav li:hover {
+            background-color: lightsteelblue;
+        }
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+    width: 100%;
+    background-color: lightskyblue;
+}

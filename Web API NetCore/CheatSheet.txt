@@ -9,7 +9,7 @@ Crear Data folder → crear DBNAMEContext.cs class
     {  
         public AutoContext(DbContextOptions<AutoContext> options) : base(options) { }
 
-        public DbSet<Auto> Autos { get; set; }
+        public DbSet<CLASS> CLASSES { get; set; }
         
     }
 
@@ -21,6 +21,7 @@ Crear Models folder → crear CLASS.cs
     {
        [Key]
         public int PROP1 { get; set; }
+
         [Required]
         [Column(TypeName = "varchar(50)")]
 

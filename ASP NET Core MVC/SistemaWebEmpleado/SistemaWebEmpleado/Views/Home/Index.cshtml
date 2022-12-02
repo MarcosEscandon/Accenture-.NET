@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Home";
+
+}
+
+@section sidebar {
+    You are at HomePage
+}
+
+    <h1 class="fw-bold">Home</h1>
+    <div>
+        <div class="d-flex flex-row justify-content-between">
+            <div class="d-flex flex-column">
+                <h3>Bienvenidos al sitio web</h3>
+                <p>
+                    @Html.ActionLink("Ir a empleados", "Index", "Empleado")
+                </p>
+            </div>
+            <div>
+                <p>Fecha:</p>
+                <p>@ViewBag.Fecha</p>
+            </div>
+        </div>
+    </div>

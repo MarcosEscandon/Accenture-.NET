@@ -1,0 +1,47 @@
+﻿@model SistemaWebEmpleado.Models.Empleado
+@{
+    ViewBag.Title = "Crear empleado";
+}
+
+@section sidebar {
+    Administración de empleados.
+}
+
+    <h1 class="fw-bold">Crear nuevo empleado</h1>
+    <br />
+@using (Html.BeginForm("Create", "Empleado", FormMethod.Post))
+{
+    <p>
+        @Html.LabelFor(model => model.Nombre)
+        @Html.EditorFor(model => model.Nombre)
+        @Html.ValidationMessageFor(model => model.Nombre)
+    </p>
+
+    <p>
+        @Html.LabelFor(model => model.Apellido)
+        @Html.EditorFor(model => model.Apellido)
+        @Html.ValidationMessageFor(model => model.Apellido)
+    </p>
+
+    <p>
+        @Html.LabelFor(model => model.DNI)
+        @Html.EditorFor(model => model.DNI)
+        @Html.ValidationMessageFor(model => model.DNI)
+    </p>
+
+    <p>
+        @Html.LabelFor(model => model.Legajo)
+        @Html.EditorFor(model => model.Legajo)
+        @Html.ValidationMessageFor(model => model.Legajo)
+    </p>
+
+    <p>
+        @Html.LabelFor(model => model.Titulo)
+        @Html.EditorFor(model => model.Titulo)
+        @Html.ValidationMessageFor(model => model.Titulo)
+    </p>
+
+    <input type="Submit" value="Crear" class="btn btn-primary me-3" />
+
+    @Html.ActionLink("Volver a la lista", "Index", "Empleado")
+}
