@@ -1,0 +1,31 @@
+﻿.container {
+    display: flex;
+    
+}
+.headerContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%
+}
+.mainContainer {
+    display: flex;
+    
+}
+header{
+    background-color:red;
+    padding: 20px;
+}
+section{
+    background-color:blue;
+    width: 30%
+}
+main {
+    background-color: green;
+    width: 70%
+}
+aside{
+    background-color:yellow;
+    width:30%
+}
+
+

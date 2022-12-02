@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/site.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <section class="menu">
+            <h3>Menu</h3>
+        </section>
+        <div class="headerContainer">
+            <header>
+                <h3>
+                    Header
+                </h3>
+            </header>
+            <div class="mainContainer">
+
+                <main>
+                    @RenderBody()
+                </main>
+
+                <aside>
+                    <h3>Aside</h3>
+                </aside>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+   
+
+</body>
+</html>
